@@ -21,6 +21,7 @@
 #To check the Python version of the editor, you can find it by importing the sys module
 import sys
 print(sys.version)
+print("Success")
 
 #To get output we should use command 'print' in python.
 print("hello")
