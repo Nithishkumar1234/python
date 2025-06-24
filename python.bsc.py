@@ -191,6 +191,7 @@ if Nithish =="Active person":
     print("Pass")
 else:
     print("Fail")
+    print("Pass")
 
 a=6
 if a>4:
