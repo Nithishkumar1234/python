@@ -43,12 +43,24 @@ d=bool(True)
 print(d)
 
 
+
+
 ## If you want to specify the data type of variable, this can be done with casting.
 A= str(5) ##A will print 5
 B= int(34) ##B will print 34
 C= float(3) ##C will print 3.0
 D= bool("e")
 print(A,B,C,D)
+
+
+##Arthimetic operators - Addition, Multiplication, Subtraction, Division, Floor Division, Modulus and Exponential
+print(5+10) #Addition
+print(2*5) #Multiply
+print(10-5) #Sub
+print(2/3) #Divison
+print(2//4) #Floor div
+print(2**3) #Exponential
+print(5%3) #Modulus
 
 
 #Multi type variable names for readability
@@ -58,6 +70,7 @@ my_Variable = "Nithish"
 My_Variable = "Krishnamoorthi"
 #Snake case - Each word is separated by an underscore character:
 my_variable_c= 4
+
 print(my_Variable)
 print(My_Variable)
 print(my_variable_c)
@@ -173,6 +186,13 @@ dct={}
 for i in range(4):
     dct[i]=i+6
 print(dct)
+
+for x in "test":
+    print(x)
+for y in "usability":
+    print(y)
+for z in range(1,4):
+    print(z*1)
 
 #Equals: a == b , Not Equals: a != b , Less than: a < b , Less than or equal to: a <= b
 #Greater than: a > b
