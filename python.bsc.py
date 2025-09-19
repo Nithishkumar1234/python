@@ -3,7 +3,7 @@
 #Python is a popular programming language. It was created by 'Guido van Rossum', and released in 1991.
 
 #It is used for:
-# 1.web development (server-side),2.Software development, 3.Maths, 4. System scripting
+#1.web development (server-side),2.Software development, 3.Maths, 4. System scripting
 
 #What can Python do?
 #Python can be used on a server to create web applications.
@@ -19,35 +19,60 @@
 ##To check python version in command line >>>>'python --version'
 
 #To check the Python version of the editor, you can find it by importing the sys module
+
 import sys
 print(sys.version)
+
+print("I am learning Automation")
 print("Success")
+print(3)
 
 #To get output we should use command 'print' in python.
-print("hello")
-print("How are you?")
-print("Nithish" + "3")
+print ("Hello User")
+print("How are you?","Who are you>?")
+print("Nithish ", 3)
+print('Hey')
+print("Hey")
 print(4)
 print(type(5.0)) ## Output <class 'float'>
+print("I want to learn python programming effectively")
+
+print("Happy Thursday")
+print(5,"Hey you!!")
+print("Hey user")
+
 
 
 ## Variable - Variables are containers for storing data values.
 ##Variable names are case-sensitive.
 #Integer, Float, boolean, string
-a=3
+A=3,"Test",5.0
+print(A)
+a="Variable"
 print(a)
 b='Text'
 print(b)
 c=45.7
-print(b,c)
+print(type(a),type(b),type(c))
 d=bool(True)
 print(d)
+e=bool(False)
+print(e)
+Mass=1
+mass=1
+MASS=1
+print(Mass,MASS,mass)
+
+User ="Software professional", 4, 6.0
+print(User)
+print([0])
+
 
 
 
 
 ## If you want to specify the data type of variable, this can be done with casting.
-A= str(5) ##A will print 5
+A= str("User") ##A will print 5
 B= int(34) ##B will print 34
 C= float(3) ##C will print 3.0
 D= bool("e")
@@ -55,11 +80,11 @@ print(A,B,C,D)
 
 
 ##Arthimetic operators - Addition, Multiplication, Subtraction, Division, Floor Division, Modulus and Exponential
-print(5+10) #Addition
+print(5+4) #Addition
 print(2*5) #Multiply
-print(10-5) #Sub
-print(2/3) #Divison
-print(2//4) #Floor div
+print(10-4) #Sub
+print(2/2) #Divison
+print(2//4) #Floor div - It will print the next bigger value
 print(2**3) #Exponential
 print(5%3) #Modulus
 
@@ -84,15 +109,26 @@ print(type(C))
 Str ="hello world"
 print(Str)
 
-b,c, d = 2, 3, "great"
+JS=[1,2,"Nithish", "Holiday"] #List
+print(JS[0], [1])
+
+
+b,c, d = 2, 3, "great" ##Variable
 print(b,c,d)
 
+U="hello world test"
+print(U.upper())
+
 #if different datatype is passed in variable  we need to pass the below args
-print("{} {}".format("value b is", b))
+print("{} {}".format(3, b))
 print("{} {}".format("value c is", c))
 print("{} {}". format("value d output is",c))
 print("{} {}".format("value d is ", b))
 print("{} {}".format("value d is",d))
+
+print ("{} {}".format('value m is', d))
+
+
 
 #"""If same data type is passed in the variable we can use + (concatenating) """"
 # concatenating refers to the process of joining two or more strings (text values) together into a single string.
@@ -100,12 +136,18 @@ G="test"
 T="user 1"
 print(G+ "Output function","sd" + T+ "pass")
 
+N="Hello user how have you been?"
+K="Hello"
+print(N, K)
+
+
+
 #Data types - Data type will define the variable
 #--->Numeric, string, list, tuple & Dictionary
 
 #List can be to store multiple items in the single variable
 #Indexing - accessing individual elements in sequences such as strings, lists, tuples, etc., using their position (index)
-# Extracting specific data ,Looping through sequences ,Slicing subsequences
+# For Extracting specific data ,Looping through sequences ,Slicing subsequences
 values=[1, 2, "Hello", 10]
 
 #if we want to get last number we need to call [-1]
@@ -113,15 +155,20 @@ print(values[0]) # Output - 1
 print(values[-1]) # Output - [-1] index is used to print the last value
 print(values[1:3]) # Output - 2 , "Hello" it will give output from index 1 and -1 ( 3rd index will not give as an output)
 
+
 Data = [1,2,3,4,5,6,7,8,9,0]
 print(Data[0])
 print(Data[3])
 print(Data[8])
-print(Data[1:5])
-print(Data[-1])
+print(Data[1:5]) #The output will be [1,2,3,4,5]
+print(Data[-1]) # The output will be last value
+
 
 #we can inject a value also inbetween the list using this command values.insert
 values.insert(4,"hello world")
+print(values)
+
+values.insert(5,"Hey user")
 print(values)
 
 Data.insert(3,"Mytest")
@@ -144,10 +191,16 @@ print(values)
 values[2]= "UAT testing"
 print(values)
 
+values[3]="user"
+print(values)
+
 values[3]="Test user preference"
 print(values)
 
 Data[0]="Tech jays"
+print(Data)
+
+Data[1]="hey"
 print(Data)
 
 
@@ -158,6 +211,12 @@ print(values)
 del values[2]
 print(values)
 
+del Data[1]
+print(Data)
+
+values.append("I want to print python as  output")
+print(values)
+
 del Data[0]
 print(Data)
 
@@ -165,15 +224,19 @@ print(Data)
 ## Tuple is used curve bracket which List used square bracket
 
 tests=(1,2,3,4,5)
-print(tests[1])
-print(tests[2])
-print(tests[4])
+print(tests[1],[2],[4])
 print(tests[1:3])
+print(tests[1:4])
+###############################################################################################
+
 
 #Dictonary - data structure that stores key-value pairs.
 #A dictionary is a collection which is ordered, changeable and do not allow duplicates.
 #(unordered, mutable, and allows fast lookups, additions, and deletions)
 
+
+fig={"Hello":3, 5:"HYE"}
+print(fig["Hello"])
 
 dic = {1:"test", "a":4}
 print(dic[1])
@@ -181,6 +244,9 @@ print(dic["a"])
 
 dic.update({1:"hello", "a":5, 5:"hello"})
 print(dic)
+
+rem={"rem 1":"Front wheel", 2:"Rear wheel"}
+print(rem["rem 1"], [2])
 
 
 dct={}
@@ -200,6 +266,7 @@ for z in range(1,4):
 #Greater than or equal to: a >= b
 
 
+
 #If else conditions
 Greeting= "Good Morning"
 if Greeting == "something":
@@ -208,11 +275,10 @@ else:
     print("conditions do not match")
 
 Nithish ="Active Person"
-if Nithish =="Active person":
+if Nithish !="Active person":
     print("Pass")
 else:
     print("Fail")
-    print("Pass")
 
 a=6
 if a>4:
