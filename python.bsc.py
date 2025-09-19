@@ -26,6 +26,7 @@ print(sys.version)
 print("I am learning Automation")
 print("Success")
 print(3)
+print("test")
 
 #To get output we should use command 'print' in python.
 print ("Hello User")
