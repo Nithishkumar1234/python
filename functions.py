@@ -3,18 +3,89 @@
 # A function can return data as a result
 
 
+
+x="Hey user"
+
+def test():
+    print("Python is awesome" + x)
+test()
+#Basic function writtern and calling:
+#To call a function, use the function name followed by parenthesis:
 def GreetMe(name):
     print("Good Morning"+name)
 
-GreetMe("Nithish") #To call a function, use the function name followed by parenthesis:
+def Orbcomm():
+    print("Orbcomm is enterprise project")
+Orbcomm()
 
-def Testcase(Positive):
+def UX():
+    print("I want to print UX in the front end")
+UX()
+
+
+
+
+# Creating a function using methods and variables
+#function with variables examples
+
+
+#List
+def variable_num():
+    A=[1,2,3,4,5]
+    print(A[0],[1])
+variable_num()
+
+def variable_string():
+    B=["Nithish", "Sam"]
+    print(B[1])
+variable_string()
+
+def variable_add():
+    A=10
+    B=22
+    print(A+B)
+variable_add()
+
+def variable_sub():
+    A=56
+    B=22
+    print(A+B)
+variable_sub()
+
+## Function creating with the arguments
+
+def variable(fname, lname):
+    print("User credentials" + fname)
+    variable(fname="Chiti", lastname = "The bot")
+
+
+
+
+
+##Variable using the for loop concept
+
+def loop():
+    for x in range(1,11):
+        print(x)
+loop()
+
+
+
+##Tuple
+
+##If else conditions function
+def Test_case(Positive):
     a=100
     if a>4:
         print("Test case is executed")
     else:
         print("Test case got failed")
-Testcase("Positive scenario")
+Test_case("Positive scenario")
+
+
+
+
+
 
 def AddIntegers(a,b):
     return a+b
@@ -88,6 +159,83 @@ class Game:
 Obj=Game()
 Obj.getdata()
 print(Obj.num)
+
+
+def add():
+    print("Addition:")
+    a=int(input("Enter a:"))
+    b=int(input("Enter b:"))
+    print(a+b)
+add()
+
+def sub():
+    print("Subtraction:")
+    a=int(input("Enter a:"))
+    b=int(input("Enter b:"))
+    print(a-b)
+sub()
+
+def multiply():
+    print("Multiply:")
+    a=int(input("Enter a:"))
+    b=int(input("Enter b:"))
+    print(a*b)
+multiply()
+
+def mutlip():
+    a=int(input("Enter a:"))
+    b=int(input("Haa B:"))
+    print(a+b)
+mutlip()
+
+
+def division():
+    print("Division:")
+    a=int(input("Enter a:"))
+    b=int(input("Enter b:"))
+    print(a/b)
+division()
+
+def painter(msg):
+    print("Message:",msg)
+painter("test")
+
+def painter(msg):
+    print("Message:", msg)
+painter("I need to paint my house")
+
+
+def findevenorodd(a):
+    if a%2==0:
+        print("Even")
+    else:
+        print("Odd")
+b=int(input("Enter a:"))
+findevenorodd(b)
+
+def userpassorfail(a):
+    print("Pass status")
+    if a>35:
+        print("User is pass")
+    else:
+        print("User is fail")
+b=int(input("Enter a value:"))
+userpassorfail(b)
+
+def printtrange(l1,l2):
+    for i in range(l1,l2):
+        print(i)
+a=int(input("Enter a value"))
+b=int(input("Enter b value"))
+printtrange(a,b)
+
+
+
+
+
+
+
+
 
 
 
