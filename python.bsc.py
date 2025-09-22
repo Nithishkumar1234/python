@@ -23,6 +23,16 @@
 import sys
 print(sys.version)
 
+#It will show the reserve keywords
+import keyword
+print(keyword.kwlist)
+
+"""
+This is a comment
+written in
+more than just one line
+"""
+
 print("I am learning Automation")
 print("Success")
 print(3)
@@ -66,7 +76,7 @@ print(Mass,MASS,mass)
 
 User ="Software professional", 4, 6.0
 print(User)
-print([0])
+print(User[0])
 
 
 
@@ -79,6 +89,9 @@ C= float(3) ##C will print 3.0
 D= bool("e")
 print(A,B,C,D)
 
+E=str("I like to code")
+print(E)
+print(type(E))
 
 ##Arthimetic operators - Addition, Multiplication, Subtraction, Division, Floor Division, Modulus and Exponential
 print(5+4) #Addition
@@ -110,6 +123,8 @@ print(type(C))
 Str ="hello world"
 print(Str)
 
+###################################################
+
 JS=[1,2,"Nithish", "Holiday"] #List
 print(JS[0], [1])
 
@@ -119,8 +134,11 @@ print(b,c,d)
 
 U="hello world test"
 print(U.upper())
+print(U.lower())
 
 #if different datatype is passed in variable  we need to pass the below args
+
+print("{} {}".format(3,c))
 print("{} {}".format(3, b))
 print("{} {}".format("value c is", c))
 print("{} {}". format("value d output is",c))
